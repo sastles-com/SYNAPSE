@@ -8,6 +8,10 @@ synapse/dist/
 # macOS
 .DS_Store
 
+# Large media / duplicates (kept local only)
+doc/loop/*.mp4
+doc/loop/*のコピー*
+
 # Logs
 *.log
 npm-debug.log*
