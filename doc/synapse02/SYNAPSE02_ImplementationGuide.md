@@ -89,3 +89,11 @@ npm install three
 ---
 
 *v1.0 — 2026-07-06。仕様一式: Spec / DataModel / 本書。概念の正典は `doc/loop/SYNAPSE_LoopArchitecture.md`。*
+
+---
+
+## 実装ノート（2026-07-06 実装完了）
+
+- **マイルストーン M1〜M8 完遂。** 各段階で dev サーバの module transform チェックを行い、最終的に `npm run build` 成功（43 modules、エラーなし）。逸脱の詳細は Spec / DataModel 各末尾の実装ノート参照。
+- **§1 リポジトリ構成:** `synapse02/` を独立 Vite プロジェクトとして新規作成。`synapse/`（synapse01）は未変更（凍結）。`vite.config.js` は `base: './'`＋`server.port: 5174`。`CLAUDE.md` に synapse02 セクションを追加済み。
+- **git コミット（§6-3）:** 未実施。ユーザ判断に委ねる（実装ファイルは全て作成済み）。

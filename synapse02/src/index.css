@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  background: #E8E7E0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 1040px;
+}
+
+button {
+  font-family: inherit;
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+@keyframes synapsePulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .5; }
+}
+
+@keyframes synapseRing {
+  0%   { transform: scale(1);   opacity: .55; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes synapseFlow {
+  to { stroke-dashoffset: -16; }
+}
